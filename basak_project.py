@@ -18,7 +18,7 @@ while(1==1):
     k = 1
 
 #https://qastack.info.tr/programming/7160737/python-how-to-validate-a-url-in-python-malformed-or-not
-#asagidaki kodu yukaridaki linkten buldum.
+#regex code that i find in this link.
     regex = re.compile(
             r'^(?:http|ftp)s?://' # http:// or https://
             r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|' #domain...
