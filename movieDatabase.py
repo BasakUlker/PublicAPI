@@ -1,20 +1,16 @@
 import requests
 import json
 
-url = "https://movie-database-imdb-alternative.p.rapidapi.com/"
+url = "https://imdb8.p.rapidapi.com/actors/list-born-today"
 
-payload = {
-
-	"s": "Avengers Endgame",
-	"page": "1",
-	"r": "json"
-} 
+querystring = {"month":"7","day":"27"}
 
 headers = {
-	"x-rapidapi-key": "",
-	"x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
+    'x-rapidapi-key': "",
+    'x-rapidapi-host': "imdb8.p.rapidapi.com"
 }
 
-response = requests.request("GET", url, headers=headers, data = payload)
+response = requests.request("GET", url, headers=headers, params = querystring)
 result = json.loads(response.text)
 print(result)
+
