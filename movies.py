@@ -13,7 +13,7 @@ def returnTitle(x):
     querystring = {"tconst": tx}
 
     headers = {
-        'x-rapidapi-key': "12f443f6f9msh31241e38a337832p1c38aajsn6fe394aeeb79",
+        'x-rapidapi-key': "",
         'x-rapidapi-host': "imdb8.p.rapidapi.com"
     }
 
@@ -27,7 +27,7 @@ url = "https://imdb8.p.rapidapi.com/title/get-popular-movies-by-genre"
 querystring = {"genre":"/chart/popular/genre/adventure"}
 
 headers = {
-    'x-rapidapi-key': "12f443f6f9msh31241e38a337832p1c38aajsn6fe394aeeb79",
+    'x-rapidapi-key': "",
     'x-rapidapi-host': "imdb8.p.rapidapi.com"
     }
 
